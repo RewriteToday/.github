@@ -16,13 +16,13 @@ Type-safe SDKs for the languages your team already ships with.
 </div>
 
 ```ts
-import { Rewrite } from '@rewritetoday/sdk';
+import { Rewrite } from 'rewritetoday';
 
 const client = new Rewrite(process.env.REWRITE_API_KEY);
 
 const { data, error } = await client.messages.send({
     to: '+5511999999999',
-    content: 'Your order 21093 is on its way',
+    content: '🛒 You forgot items in the cart! Use OFF10 for 10% off',
 });
 ```
 
